@@ -6,10 +6,11 @@ app.use(cors());
 
 // Set Template Engine
 app.set("view engine", "ejs");
-// app.engine("html", require("ejs").renderFile);
+app.engine("html", require("ejs").renderFile);
 
+app.use("/v1/api", require("./routes/history.routes"));
 
-// app.use("/", require("./routes/home.routes"));
+app.use("/", require("./routes/home.routes"));
 app.use("/", require("./routes/home.routes"));
 
 app.use("/v1/api", require("./routes/orderDetails.routes"));
