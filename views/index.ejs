@@ -191,7 +191,7 @@
               var dataBody = document.getElementById("dataBodyU1");
                const  items=response.data.data;
               const result = items.filter(function(item) {
-            return item.quoteCoin = proType;
+            return item.quoteCoin == proType;
             });
             // console.log(result);
             result.forEach(function (item) {
@@ -255,29 +255,7 @@
       //         alert("Credentials not Correct User:2");
       //       });
       //   }
-      // });
-      function getDATA() {
-        fillPrice = firstOrder.fillPrice + "/" + secondOrder.fillPrice;
-        fillQuantity =
-        firstOrder.fillQuantity + "/" + secondOrder.fillQuantity;
-        fillTotalAmount =
-        firstOrder.fillTotalAmount + "/" + secondOrder.fillTotalAmount;
-        fees = firstOrder.fees + "/" + secondOrder.fees;
-       if ( secondOrder.fillPrice==undefined || firstOrder.fillPrice==undefined) {
-        alert("Please put the credentials for Both User")
-        return -1;
-       } else {
-        document
-          .getElementById("showData")
-          .addEventListener("click", function () {
-            document.getElementById("fill").innerHTML = fillPrice;
-            document.getElementById("quantity").innerHTML = fillQuantity;
-            document.getElementById("total").innerHTML = fillTotalAmount;
-            document.getElementById("fee").innerHTML = fees;
-          });
-       }
-       }
-          
+      // });  
     </script>
   </body>
 </html>
