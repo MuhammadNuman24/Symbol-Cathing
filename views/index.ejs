@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bitget | Home</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Home</title>
     <style>
       body {
         background-color: rgb(204, 204, 204);
@@ -92,8 +91,6 @@
         width: 300px;
         align-items: center;
         justify-content: space-between;
-      }
-      .order-history-table {
       }
       .table-c {
         display: flex;
@@ -208,54 +205,6 @@
             console.log(error);
             });
       };
-      console.log(firstOrder.orderId);
-      // User 2
-      // submitButton1.addEventListener("click", function () {
-      //   const apiKey1 = document.getElementById("apiKey1").value;
-      //   const secretKey1 = document.getElementById("secretKey1").value;
-      //   const paraPhrase1 = document.getElementById("paraPhrase1").value;
-      //   if (apiKey1.length < 10 || secretKey1 < 10 || paraPhrase1.length < 5) {
-      //     alert("Please Enter the Credentials in Input Fields");
-      //   } else {
-      //     axios({
-      //       method: "get",
-      //       url: "https://cheerful-bikini-ox.cyclic.app/v1/api/u2/order",
-      //       headers: {
-      //         "Access-Control-Allow-Methods":
-      //           "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-      //         "Access-Control-Allow-Origin": "*",
-      //         "Content-Type": "application/json",
-      //       },
-      //       params: {
-      //         apiKey: apiKey1,
-      //         secretKey: secretKey1,
-      //         paraPhrase: paraPhrase1,
-      //         symbol: "TRXUSDT_SPBL",
-      //         orderId: 974792555020390400,
-      //         clientOrderId: 974792554995224576,
-      //       },
-      //     })
-      //       .then(function (response) {
-      //         var dataBody = document.getElementById("dataBodyU2");
-
-      //         response.data.data.forEach(function (item) {
-      //           secondOrder=item
-      //           var row = document.createElement("tr");
-
-      //           for (var key in item) {
-      //             var cell = document.createElement("td");
-      //             cell.innerHTML = item[key];
-      //             row.appendChild(cell);
-      //           }
-
-      //           dataBody.appendChild(row);
-      //         });
-      //       })
-      //       .catch(function (error) {
-      //         alert("Credentials not Correct User:2");
-      //       });
-      //   }
-      // });  
     </script>
   </body>
 </html>
